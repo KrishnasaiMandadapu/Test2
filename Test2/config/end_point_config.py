@@ -16,7 +16,7 @@ session.headers = {
         }
 session.cookies.set("__Secure-1PSID", os.getenv("_BARD_API_KEY"))
 
-root='ProdaptGPT'
+root='/var/lib/jenkins/workspace/Python build/Test2'
 image=root+'/resources/prodapt_logo.png'
 conversation_1=root+'/history_logs/conversation_history.json'
 conversation_2=root+'/history_logs/conversation_history_bard.json'
