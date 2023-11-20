@@ -20,7 +20,7 @@ session.headers = {
 session.cookies.set("__Secure-1PSID", os.getenv("_BARD_API_KEY"))
 
 root=''
-image= os.path.join(script_dir, 'resources', 'prodapt_logo.PNG')
+image= os.path.join(script_dir, 'resources', 'prodapt_image.png')
 conversation_1= os.path.join(script_dir, 'history_logs', 'conversation_history.json')
 conversation_2=os.path.join(script_dir, 'history_logs', 'conversation_history_bard.json')
 # image='resources/prodapt_logo.png'
