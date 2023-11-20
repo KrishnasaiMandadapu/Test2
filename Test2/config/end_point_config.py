@@ -1,4 +1,4 @@
-from Test2.config.imports import *
+from config.imports import *
 openai.api_key="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"
 # quest_data="/home/support/Semantic_search_3/Embeddings/quest.csv"
 
