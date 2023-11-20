@@ -4,7 +4,7 @@ from config.end_point_config import *
 from config.imports import *
 
 with st.container():
-    image1 = Image.open(image)#prodapt logo
+    image1 = Image.open(image)
     st.sidebar.image(image1, width=125)
 # col1, col2 = st.sidebar.columns(2)
 
@@ -21,7 +21,7 @@ model=st.sidebar.radio(
 # placeholder=st.sidebar.empty()
 
 new_session=st.sidebar.button("New chat")
-st.sidebar.title("ProdaptGPT")
+st.sidebar.title("test")
 text_area_id = 'text'
 user_input=st.sidebar.text_area(placeholder="Enter the text here",label="input",label_visibility="hidden",value='',key=text_area_id)
 conversation = []
