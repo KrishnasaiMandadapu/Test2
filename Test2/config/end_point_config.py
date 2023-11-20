@@ -1,5 +1,8 @@
 from config.imports import *
 openai.api_key="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"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+
 # quest_data="/home/support/Semantic_search_3/Embeddings/quest.csv"
 
 os.environ['_BARD_API_KEY'] = 'YAhoQ-pD09RoMqNeQxvntBfen4ybLmVDwZIP51bIt75C4EncYlEssopSSN0g0C8q3v8_7Q.'
@@ -17,6 +20,9 @@ session.headers = {
 session.cookies.set("__Secure-1PSID", os.getenv("_BARD_API_KEY"))
 
 root=''
-image='resources/prodapt_logo.png'
-conversation_1='history_logs/conversation_history.json'
-conversation_2='history_logs/conversation_history_bard.json'
+image= os.path.join(script_dir, 'resources', 'prodapt_logo.png')
+conversation_1= os.path.join(script_dir, 'history_logs', 'conversation_history.json')
+conversation_2=os.path.join(script_dir, 'history_logs', 'conversation_history_bard.json')
+# image='resources/prodapt_logo.png'
+# conversation_1='history_logs/conversation_history.json'
+# conversation_2='history_logs/conversation_history_bard.json'
