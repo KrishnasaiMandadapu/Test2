@@ -4,7 +4,7 @@ def new_import():
 openai.api_key="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"
 
 
-print(script_dir,end="???????????????")
+#print(script_dir,end="???????????????")
 # quest_data="/home/support/Semantic_search_3/Embeddings/quest.csv"
 
 os.environ['_BARD_API_KEY'] = 'YAhoQ-pD09RoMqNeQxvntBfen4ybLmVDwZIP51bIt75C4EncYlEssopSSN0g0C8q3v8_7Q.'
