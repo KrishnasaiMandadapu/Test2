@@ -1,4 +1,5 @@
 from config.imports import *
+from Code.test import script_dir
 openai.api_key="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"
 
 
