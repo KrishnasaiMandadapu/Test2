@@ -2,7 +2,8 @@ from config.imports import *
 
 openai.api_key="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"
 
-
+current_directory = os.getcwd()
+print(current_directory)
 #print(script_dir,end="???????????????")
 # quest_data="/home/support/Semantic_search_3/Embeddings/quest.csv"
 
@@ -20,11 +21,11 @@ session.headers = {
         }
 session.cookies.set("__Secure-1PSID", os.getenv("_BARD_API_KEY"))
 
-# root='/var/lib/jenkins/workspace/Python build/Test2/'
+root='/var/lib/jenkins/workspace/pipline test/Test2/'
 
-image= os.path.join(script_dir, 'resources', 'prodapt_image.png')
-conversation_1= os.path.join(script_dir, 'history_logs', 'conversation_history.json')
-conversation_2=os.path.join(script_dir, 'history_logs', 'conversation_history_bard.json')
-# image=root+'resources/prodapt_logo.PNG'
-# conversation_1=root+'history_logs/conversation_history.json'
-# conversation_2=root+'history_logs/conversation_history_bard.json'
+# image= os.path.join(script_dir, 'resources', 'prodapt_image.png')
+# conversation_1= os.path.join(script_dir, 'history_logs', 'conversation_history.json')
+# conversation_2=os.path.join(script_dir, 'history_logs', 'conversation_history_bard.json')
+image=root+'resources/prodapt_logo.PNG'
+conversation_1=root+'history_logs/conversation_history.json'
+conversation_2=root+'history_logs/conversation_history_bard.json'
