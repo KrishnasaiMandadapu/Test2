@@ -1,6 +1,5 @@
 from config.imports import *
-def new_import():
-            from Code.test import script_dir
+
 openai.api_key="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"
 
 
@@ -22,7 +21,7 @@ session.headers = {
 session.cookies.set("__Secure-1PSID", os.getenv("_BARD_API_KEY"))
 
 # root='/var/lib/jenkins/workspace/Python build/Test2/'
-new_import()
+
 image= os.path.join(script_dir, 'resources', 'prodapt_image.png')
 conversation_1= os.path.join(script_dir, 'history_logs', 'conversation_history.json')
 conversation_2=os.path.join(script_dir, 'history_logs', 'conversation_history_bard.json')
