@@ -2,6 +2,7 @@ import sys
 sys.path.append('..')
 from config.end_point_config import *
 from config.imports import *
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 with st.container():
     image1 = Image.open(image)
