@@ -1,4 +1,8 @@
 import sys
+parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+# Add the parent directory to sys.path
+sys.path.append(parent_directory)
 sys.path.append('..')
 
 print(sys.path,end="before")
