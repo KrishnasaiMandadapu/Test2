@@ -1,9 +1,8 @@
 import sys
-import os
-c_d=os.getcwd()
+sys.path.append('..')
+
 print(sys.path,end="before")
-sys.path.append(os.path.dirname(c_d))
-print(sys.path,end="after")
+
 from config.end_point_config import *
 from config.imports import *
 script_dir = os.path.dirname(os.path.abspath(__file__))
