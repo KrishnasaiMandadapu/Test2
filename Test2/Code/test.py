@@ -1,5 +1,7 @@
 import sys
+print(sys.path,end="before")
 sys.path.append('..')
+print(sys.path,end="after")
 from config.end_point_config import *
 from config.imports import *
 script_dir = os.path.dirname(os.path.abspath(__file__))
