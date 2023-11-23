@@ -3,7 +3,7 @@ from config.imports import *
 openai.api_key="krishna"
 
 current_directory = os.getcwd()
-
+print(os.path.dirname(current_directory),end=" parent  dirrectory")
 #print(script_dir,end="???????????????")
 # quest_data="/home/support/Semantic_search_3/Embeddings/quest.csv"
 
